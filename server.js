@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 const startTime = Date.now()
+const startTime2 = Date.now()
 const path = require('path')
 const fs = require('fs')
 const morgan = require('morgan')
