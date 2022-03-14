@@ -27,3 +27,13 @@ jobs:
     - run: npm i -g snyk
     - run: snyk auth ${{ secrets.SNYK_TOKEN }}
     - run: snyk code test
+    security:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run Snyk to check Docker image for vulnerabilities
+      continue-on-error: true
+      uses: snyk/actions/docker@master
+      env:
+        SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      with:
+        image: nginx 
