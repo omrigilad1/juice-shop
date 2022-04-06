@@ -1,5 +1,5 @@
 name: Example workflow for Docker using Snyk 
-on: push
+on: pull
 jobs:
   security:
     runs-on: ubuntu-latest
