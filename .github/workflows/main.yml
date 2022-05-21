@@ -1,9 +1,10 @@
-name: "Snyk Test"
+name: "Snyk_Test"
 
 on:
   push:
-    branches:
-    - master
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   Pipeline-Job:
