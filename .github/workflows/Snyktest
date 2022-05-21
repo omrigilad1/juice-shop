@@ -1,5 +1,5 @@
 
-name: "Snyk Test"
+name: "Snyk Test scan"
 
 on:
   pull_request:
