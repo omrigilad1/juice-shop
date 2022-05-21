@@ -2,9 +2,10 @@
 name: "Snyk Test"
 
 on:
+  push:
+    branches: [ master ]
   pull_request:
-    branches:
-    - master
+    branches: [ master ]
 
 jobs:
   Pipeline-Job:
