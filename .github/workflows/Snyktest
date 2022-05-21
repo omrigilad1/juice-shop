@@ -1,5 +1,5 @@
 
-name: "Snyk Test"
+name: "SnykTest"
 
 on:
   push:
