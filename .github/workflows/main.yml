@@ -1,4 +1,4 @@
-name: "Snyk_Test"
+name: "SnykTest"
 
 on:
   push:
