@@ -29,6 +29,7 @@ jobs:
     - name: Run Snyk Open Source
       run: |
           snyk test --severity-threshold=high 
+          snyk monitor
           snyk test --json --print-deps | snyk-delta
       continue-on-error: true
    
