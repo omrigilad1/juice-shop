@@ -28,7 +28,8 @@ jobs:
     # Run Snyk Open Source
     - name: Run Snyk Open Source
       run: |
-          snyk monitor
           snyk test --json --print-deps | snyk-delta
+          snyk monitor
+
       continue-on-error: true
    
